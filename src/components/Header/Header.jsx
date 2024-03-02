@@ -28,9 +28,12 @@ function Header(props) {
         <div className="collapse navbar-collapse" id="navbarExample01">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item active">
+              <Link to="/section">
               <a className="nav-link" aria-current="page" href="#news">
                 Home
               </a>
+              </Link>
+              
             </li>
             <li className="nav-item">
               <Link to="/land">
@@ -48,11 +51,14 @@ function Header(props) {
               
             </li>
             <li className="nav-item">
+              <Link to="/pageNotFound">
               <a className="nav-link" aria-current="page" href="#foundation">
                 Fertilzers
               </a>
+              </Link>
+              
             </li>
-
+            <Link to="/pageNotFound">
             <li className="nav-item d-flex align-items-center pr-4">
               <a className="nav-link" aria-current="page" href="#contact">
                 Contact
@@ -62,7 +68,10 @@ function Header(props) {
                 alt=""
                 style={{ width: "32px", height: "32px" }}
               />
-            </li>
+              </li>
+            </Link>
+            
+            
           </ul>
           <button className="btn rounded-5 ml-4">
             <Link to="/login">{props.value}</Link>

@@ -57,26 +57,26 @@ function WeatherInfo(props) {
       <img className="card-img-top" src={weather} alt="Card image cap" />
       {/* {data ? <pre>{JSON.stringify(data, null,2)}</pre> : 'Loading...'} */}
       <div
-        className="card-body text-white rounded-bottom"
+        className="card-body text-white rounded-bottom  d-flex align-items-center justify-content-center"
         style={{ backgroundColor: "#043A3A" }}
       >
-        <div className="row">
-          <div className="col  d-flex flex-column align-items-center">
-            <h1 className="text-white">
+        <div className="row w-100">
+          <div className="col d-flex flex-column align-items-center justify-content-center">
+            <h1 className="text-white mb-1">
               {data ? data.current.temp_c : "no data available"} C
             </h1>
-            <p className="text-light">Temperature</p>
+            <p className="text-light mb-0">Temperature</p>
           </div>
           {/* <div className="col  d-flex flex-column align-items-center">
             <h1 className="text-light"></h1>
             <p className="text-light">Season</p>
           </div> */}
           <div className="col d-flex flex-column align-items-center">
-            <h1 className="text-light">
+            <h1 className="text-light mb-1">
               {" "}
               {data ? data.current.precip_mm : "No data"} mm
             </h1>
-            <p className="text-light">Rainfall</p>
+            <p className="text-light mb-0">Rainfall</p>
           </div>
         </div>
       </div>

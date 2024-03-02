@@ -17,7 +17,7 @@ export default function PageNotFound() {
                 website! Maybe go to our home page or try to use a search?
               </p>
               <Link to="/">
-                <Button link={"/"} value={"Go Back to Home "} />
+                <Button link={"/section"} value={"Go Back to Home "} />
            
               </Link>
               
