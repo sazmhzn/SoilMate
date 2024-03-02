@@ -40,9 +40,12 @@ function Header(props) {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to="/pageNotFound">
               <a className="nav-link" aria-current="page" href="#adoptions">
                 Crops
               </a>
+              </Link>
+              
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#foundation">

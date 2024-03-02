@@ -6,6 +6,7 @@ import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashbaord";
 import Section from "./Pages/Section";
 import Land from "./Pages/Land";
+import PageNotFound from "./Pages/PageNotFound";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
@@ -23,6 +24,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/section" element={<Section />} />
           <Route path="/land" element={<Land />} />
+          <Route path="/pageNotFound" element={<PageNotFound />} />
 
           {/* <Redirect to="/" /> */}
           <Route path="*" element={<Navigate to="/" />} />

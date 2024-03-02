@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Button from "../components/Button/Button";
 
 import "../css/Login.css";
 
@@ -44,7 +45,7 @@ const Login = (props) => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    // navigate('/Dashboard') ;
+    navigate('/Dashboard') ;
   }
 
   return (
@@ -81,15 +82,17 @@ const Login = (props) => {
         <br />
         <div className={"inputContainer"}>
           {/* <input className={'inputButton'} type="button" onClick={onButtonClick} value={'Log in'} /> */}
-          <Link to="/section">
-            <button
+ 
+            {/* <button
             className="btn btn-primary"
             onClick={onButtonClick}
             value={"Log in"}
           >
             {"Login"}
-          </button>
-          </Link>
+          </button> */}
+
+      
+          <Button onClick={onButtonClick} link={'/section'} value={"Login"}/>
           
         </div>
       </form>
