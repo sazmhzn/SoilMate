@@ -5,7 +5,7 @@ import LandingPage from "./LandingPage";
 import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashbaord";
 import Section from "./Pages/Section";
-
+import Land from "./Pages/Land";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
@@ -22,6 +22,7 @@ function App() {
           <Route path="/login" element={<Login setLoggedIn={setLoggedIn} setEmail={setEmail} />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/section" element={<Section />} />
+          <Route path="/land" element={<Land />} />
 
           {/* <Redirect to="/" /> */}
           <Route path="*" element={<Navigate to="/" />} />

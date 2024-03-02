@@ -30,11 +30,12 @@ const Card = (props) => {
 
   return (
     <>
-      <div className="col-3">
+      <div className="col-3 m-4">
         <div className="card">
           <div className="card-image"
           style={{
-            height:"50%",
+            minHeight:"200px",
+            maxHeight:"200px"
           }}>
 
             <img
