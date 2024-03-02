@@ -1,0 +1,21 @@
+
+nav {
+    background-color: #043A3A;
+    z-index: 10;
+}
+
+a {
+    color: white !important; 
+}
+
+a > span {
+    color: #2FB95D;
+}
+
+.navbar-brand {
+    font-size: 32px !important;
+}
+
+.nav-link {
+    font-size: 18px !important;
+}
