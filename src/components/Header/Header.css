@@ -19,3 +19,14 @@ a > span {
 .nav-link {
     font-size: 18px !important;
 }
+
+li {
+    padding-inline: 20px;
+}
+
+button {
+    background-color: #2FB95D !important;
+    padding: 16px 32px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}

@@ -24,11 +24,14 @@ h1 {
 }
 
 .card {
+    height: 40vh !important;
+    overflow: hidden !important;
     border: none !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-image {
-    height:30vh;
     border-top: 1px solid gray;
     border-radius: 250px 250px 0 0;
     padding: 10px;
@@ -53,4 +56,6 @@ h1 {
     letter-spacing: 0px;
     font-weight: 500;
     color: #043A3A;
+    height: max-content;
+    padding: 12px;
 }

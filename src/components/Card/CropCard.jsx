@@ -1,15 +1,13 @@
 import "../Card/CropCard.css";
 import React, { useState } from "react";
-import FiddleLeaf from "../img/fiddleLeaf.jpg";
-import cropData from "../CropData";
 import Card from "./Card";
 import fiddleLeaf from "../img/fiddleLeaf.jpg";
 import tomato from "../img/Tomato.jpg";
 import potato from "../img/potato.jpeg";
 import chilies from "../img/chilies.jpg";
-import pota from "../img/potato.jpeg";
 
 function CropCard() {
+  
     const data = [
     {
       id: 1,

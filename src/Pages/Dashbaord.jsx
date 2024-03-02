@@ -6,6 +6,7 @@ import NPKForm from "../components/Form/NPKForm";
 import CropCard from "../components/Card/CropCard";
 import TestTaken from "../components/Form/TestTaken";
 import Chat from "../components/chatbot/Chat";
+import FertilizerCard from "../components/Card/FertilizerCard";
 
 import "../css/Dashboard.css";
 
@@ -62,10 +63,8 @@ const data = {
   },
 };
 
-
 function Dashboard(props) {
-
-  const {tested, setTested} = props;
+  const { tested, setTested } = props;
   // console.log( "tested or not: ", props);
   // console.log( "This is in Dashboard", props);
 
@@ -75,7 +74,7 @@ function Dashboard(props) {
       <div className="container">
         {/* <Header value={'signout'}/> */}
         <h1 style={{ marginTop: "14vh" }}>Home</h1>
-      
+
         <h3>Weather Details</h3>
         {/* {data ? <pre>{data.current.temp_c}</pre> : 'Loading...'} */}
         <div className="row p-2 mb-4 d-flex ">
@@ -83,12 +82,16 @@ function Dashboard(props) {
             <WeatherInfo />
             <Progress />
           </div>
-    
+
           <div
             className="col-lg-6 col-sm-12 rounded-2 p-4"
             style={{ backgroundColor: "#043A3A" }}
           >
-            {tested ? <TestTaken tested={tested} setTested={setTested} /> : <NPKForm tested={tested} setTested={setTested} />  }
+            {tested ? (
+              <TestTaken tested={tested} setTested={setTested} />
+            ) : (
+              <NPKForm tested={tested} setTested={setTested} />
+            )}
             {/* <NPKForm  tested={tested} setTested={setTested} /> */}
           </div>
         </div>
@@ -108,7 +111,21 @@ function Dashboard(props) {
             })} */}
 
             <CropCard />
+          </div>
+        </div>
+
+        <div
+          className="container"
+          style={{
+            minHeight: "100vh",
+            display: "grid",
+            placeContent: "center",
+          }}
+        >
+          <h1>Recommended Crops</h1>
+          <div className="row card-container">
             
+            <FertilizerCard />
           </div>
         </div>
       </div>

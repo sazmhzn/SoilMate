@@ -1,5 +1,5 @@
 import "../Card/CropCard.css";
-import React, { Component } from "react";
+import React from "react";
 
 const Card = (props) => {
   // const data = [
@@ -26,16 +26,20 @@ const Card = (props) => {
   // ];
 
   const { img, name, description } = props.item;
-  // console.log(props.name);
+  console.log(props.name);
 
   return (
     <>
-      <div className="col">
+      <div className="col-3">
         <div className="card">
-          <div className="card-image">
+          <div className="card-image"
+          style={{
+            height:"50%",
+          }}>
+
             <img
               src={img}
-              className="card-img-top object-fit-fill"
+              className="card-img-top"
               alt="a plant"
             />
           </div>

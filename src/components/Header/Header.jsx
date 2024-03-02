@@ -47,17 +47,15 @@ function Header(props) {
                 </a>
               </li>
 
-              <li className="nav-item d-flex align-items-center pr-4" style={{paddingInline:"20px"}}>
+              <li className="nav-item d-flex align-items-center pr-4">
                 <a className="nav-link" aria-current="page" href="#contact">
                   Contact
                 </a>
                 <img src={call} alt="" style={{width:"32px", height:"32px"}}/>
               </li>
-              <li>
-               
-              </li>
+           
             </ul>
-            <button className="btn btn-primary ml-4">
+            <button className="btn rounded-5 ml-4">
                   <Link to="/login">{props.value}</Link>
                 </button>
           </div>
