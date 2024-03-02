@@ -45,7 +45,7 @@ const Login = (props) => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    navigate('/Dashboard') ;
+    navigate("/Dashboard");
   }
 
   return (
@@ -72,6 +72,7 @@ const Login = (props) => {
         <br />
         <div className={"inputContainer"}>
           <input
+            type="password"
             value={password}
             placeholder="Enter your password here"
             onChange={(ev) => setPassword(ev.target.value)}
@@ -82,8 +83,8 @@ const Login = (props) => {
         <br />
         <div className={"inputContainer"}>
           {/* <input className={'inputButton'} type="button" onClick={onButtonClick} value={'Log in'} /> */}
- 
-            {/* <button
+
+          {/* <button
             className="btn btn-primary"
             onClick={onButtonClick}
             value={"Log in"}
@@ -91,9 +92,20 @@ const Login = (props) => {
             {"Login"}
           </button> */}
 
-      
-          <Button onClick={onButtonClick} link={'/section'} value={"Login"}/>
-          
+          <Button onClick={onButtonClick} link={"/section"} value={"Login"} />
+          <div className="mt-5">
+            <Link to="/">
+              <a
+                href="#"
+                className="rounded-pill text-success"
+                style={{
+                  backgroundColor: "white !important",
+                }}
+              >
+                Go back
+              </a>
+            </Link>
+          </div>
         </div>
       </form>
     </div>

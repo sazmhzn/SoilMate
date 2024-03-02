@@ -7,6 +7,8 @@ import Dashboard from "./Pages/Dashbaord";
 import Section from "./Pages/Section";
 import Land from "./Pages/Land";
 import PageNotFound from "./Pages/PageNotFound";
+import CropList from "./Pages/CropList";
+import FertilizerList from "./Pages/FertilizerList";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false)
@@ -25,6 +27,9 @@ function App() {
           <Route path="/section" element={<Section />} />
           <Route path="/land" element={<Land />} />
           <Route path="/pageNotFound" element={<PageNotFound />} />
+          <Route path="/cropList" element={<CropList />} />
+          <Route path="/fertilizer" element={<FertilizerList />} />
+
 
           {/* <Redirect to="/" /> */}
           <Route path="*" element={<Navigate to="/" />} />

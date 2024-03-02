@@ -43,7 +43,7 @@ function Header(props) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/pageNotFound">
+              <Link to="/cropList">
               <a className="nav-link" aria-current="page" href="#adoptions">
                 Crops
               </a>
@@ -51,7 +51,7 @@ function Header(props) {
               
             </li>
             <li className="nav-item">
-              <Link to="/pageNotFound">
+              <Link to="/Fertilizer">
               <a className="nav-link" aria-current="page" href="#foundation">
                 Fertilzers
               </a>

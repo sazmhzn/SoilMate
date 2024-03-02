@@ -28,7 +28,8 @@ function LandingPage(props) {
           <div className="banner-top">
             <div className="overlay">
               <div className="container">
-                <div className="w3layouts-banner-info text-center" style={{width:"100%", height:"75vh", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                <div className="w3layouts-banner-info text-center" style={{width:"100%", height:"75vh", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
+                  <h2 className="text-light">Welcome to SoilMate</h2>
                   <h3 className="text-light" style={{fontFamily:"Inter", letterSpacing:"1px"}}>Empowering Farmers with Data-Driven Agriculture</h3>
                  
                 </div>
